@@ -124,19 +124,9 @@ dist/**/*.test.d.ts.map
 *.config.js
 .*
 
-# Application temp
-tmp/*.json
-tmp/failure-screenshots/**/*.jpg
-tmp/failure-screenshots/**/*.png
-tmp/google-chrome/user/**/*
-!tmp/google-chrome/user/.gitkeep
-tmp/media/**/*.*
-!tmp/media/downloads/.gitkeep
-!tmp/media/downloads/INSTAGRAM-video1.mp4
-!tmp/media/downloads/INSTAGRAM-video2.ts
-!tmp/media/montage/INSTAGRAM-video_prefix.mp4
-!tmp/media/montage/INSTAGRAM-video_prefix.ts
-!tmp/media/output/.gitkeep
+# tmp media
+tmp/media/downloads/*.mp4
+tmp/media/downloads/*.mp3
 
 # npmrc
 .env.npmrc

@@ -113,21 +113,6 @@ bundle-analyzer-stats.json
 *.bundle.js
 *.js.map
 dist
-# Application temp
-tmp/*.json
-tmp/failure-screenshots/**/*.jpg
-tmp/failure-screenshots/**/*.png
-
-# Application temp
-tmp/*.json
-tmp/failure-screenshots/**/*.jpg
-tmp/failure-screenshots/**/*.png
-tmp/google-chrome/user/**/*
-!tmp/google-chrome/user/.gitkeep
-
-# Temporary media
-tmp/media/**/*.*
-tmp/video/**/*.*
 
 # media
 !tmp/media/downloads/.gitkeep
@@ -139,23 +124,6 @@ tmp/video/**/*.*
 !tmp/media/downloads/video-square.mp4
 !tmp/media/downloads/video-story.mp3
 !tmp/media/downloads/video-story.mp4
-
-!tmp/media/montage/.gitkeep
-!tmp/media/montage/INSTAGRAM-video_prefix_landscape.mp4
-!tmp/media/montage/INSTAGRAM-video_prefix_landscape.ts
-!tmp/media/montage/INSTAGRAM-video_prefix_portrait.mp4
-!tmp/media/montage/INSTAGRAM-video_prefix_portrait.ts
-!tmp/media/montage/INSTAGRAM-video_prefix_square.mp4
-!tmp/media/montage/INSTAGRAM-video_prefix_square.ts
-!tmp/media/montage/INSTAGRAM-video_prefix_story.mp4
-!tmp/media/montage/INSTAGRAM-video_prefix_story.ts
-
-!tmp/media/output/.gitkeep
-
-# video
-!tmp/video/downloads/video-landscape1-TRACK-SQUARE_RATIO.mov
-!tmp/video/downloads/video-landscape1-TRACK-SQUARE_RATIO.mp4
-!tmp/video/downloads/video-landscape1-TRACK-SQUARE_RATIO.mp3
 
 # npmrc
 .env.npmrc
