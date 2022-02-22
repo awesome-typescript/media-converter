@@ -115,6 +115,8 @@ bundle-analyzer-stats.json
 dist
 
 # media
+tmp/media/downloads/*.mp4
+tmp/media/downloads/*.mp3
 !tmp/media/downloads/.gitkeep
 !tmp/media/downloads/video-landscape.mp3
 !tmp/media/downloads/video-landscape.mp4
