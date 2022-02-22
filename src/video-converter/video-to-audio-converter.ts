@@ -19,9 +19,11 @@ export const videoToAudioConverter = async (
       .input(localeMediaFilePath)
       .addOptions(ffmpegOptions)
       .save(localeMediaSaveFilePath)
+      // eslint-disable-next-line no-console
       .on('start', (command) => console.log(`videoAudioConverter: ${command}`))
       .on('end', () => resolve())
       .on('error', (error) => {
+        // eslint-disable-next-line no-console
         console.log('error:videoAudioConverter')
         reject(error)
       })

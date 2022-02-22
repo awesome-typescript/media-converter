@@ -1,30 +1,45 @@
-# Aspect Ratio Calculator
+# Media Converter
 
-This tool will help you calculate aspect ratios and pixel dimensions of images and videos. This can be used to ensure that you are working at the correct resolution.
+This is a simple ffmpeg media wrapper
 
+### Install
 ```
-Widescreen (16:9)
-Square (1:1)
-Social (4:5)
-Portrait (9:16)
+npm install --save @awesome-typescript/media-converter
 ```
 
-#### Install
-```
-npm install --save @awesome-typescript/calculate-aspect-ratio
-```
+### How to use
 
-#### How to use
+#### MediaCombiner
 ```js
-import { aspectRatio, isLandscape, isPortrait, isStory, isSquare } from '@awesome-typescript/calculate-aspect-ratio'
+import { MediaCombiner } from './media-combiner'
 
-aspectRatio(640, 360) // 16:9
-aspectRatio(640, 640) // 1:1
-aspectRatio(1080, 1350) // 4:5
-aspectRatio(720, 1280) // 9:16
+MediaCombiner.videoConcat(
+  ['./tmp/video1.mp4', './tmp/video2.mp4', './tmp/video3.mp4'],
+  './tmp/out.mp4'
+)
+```
 
-isLandscape(640, 360)
-isPortrait(1080, 1350)
-isStory(720, 1280)
-isSquare(640, 640)
+#### MediaMetadata
+```js
+import { MediaMetadata } from './media-metadata'
+
+MediaMetadata.filesDurationInSeconds('./tmp/video1.mp4')
+MediaMetadata.fileDurationInSeconds('./tmp/video1.mp4')
+MediaMetadata.filesDurationInMinutes('./tmp/video1.mp4')
+MediaMetadata.fileDurationInMinutes('./tmp/video1.mp4')
+
+MediaMetadata.isLandscape('./tmp/video1.mp4')
+MediaMetadata.isPortrait('./tmp/video1.mp4')
+MediaMetadata.isSquare('./tmp/video1.mp4')
+MediaMetadata.isRatio_4_5('./tmp/video1.mp4')
+MediaMetadata.isRatio_9_16('./tmp/video1.mp4')
+MediaMetadata.isRatio_16_9('./tmp/video1.mp4')
+```
+
+#### VideoConverter
+```js
+import { VideoConverter } from './video-converter'
+
+VideoConverter.videoToAudio('./tmp/video1.mp4', './tmp/video1.mp3')
+VideoConverter.videoToTS('./tmp/video1.mp4', './tmp/video1.ts')
 ```

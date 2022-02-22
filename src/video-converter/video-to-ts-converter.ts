@@ -17,6 +17,7 @@ export const videoToTsConverter = async (
       .addOptions(ffmpegOptions)
       .save(localeMediaSaveFilePath)
       .on('start', (command) =>
+        // eslint-disable-next-line no-console
         console.log(`videoMP4ToTSConverter: ${command}`),
       )
       .on('end', () => resolve())

@@ -23,10 +23,12 @@ export const videoAndAudioCombiner = async (
       .addOptions(ffmpegOptions)
       .save(localeVideoSaveFilePath)
       .on('start', (command) =>
+        // eslint-disable-next-line no-console
         console.log(`videoAndAudioCombiner: ${command}`),
       )
       .on('end', () => resolve())
       .on('error', (error) => {
+        // eslint-disable-next-line no-console
         console.log('error:videoAndAudioCombiner')
         reject(error)
       })
