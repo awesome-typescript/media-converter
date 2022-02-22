@@ -23,9 +23,9 @@ MediaCombiner.videoConcat(
 ```js
 import { MediaMetadata } from './media-metadata'
 
-MediaMetadata.filesDurationInSeconds('./tmp/video1.mp4')
+MediaMetadata.filesDurationInSeconds(['./tmp/video1.mp4', './tmp/video2.mp4'])
 MediaMetadata.fileDurationInSeconds('./tmp/video1.mp4')
-MediaMetadata.filesDurationInMinutes('./tmp/video1.mp4')
+MediaMetadata.filesDurationInMinutes(['./tmp/video1.mp4', './tmp/video2.mp4'])
 MediaMetadata.fileDurationInMinutes('./tmp/video1.mp4')
 
 MediaMetadata.isLandscape('./tmp/video1.mp4')
