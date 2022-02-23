@@ -23,7 +23,7 @@
 		"precommit": "lint-staged"
 	},
 	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/"
 	},
 	"dependencies": {
 		"@awesome-typescript/aspect-ratio-calculator": "1.0.1",
