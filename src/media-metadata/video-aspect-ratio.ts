@@ -1,4 +1,5 @@
-import ffmpeg, { FfprobeData } from 'fluent-ffmpeg'
+import ffmpeg from 'fluent-ffmpeg'
+import type { FfprobeData } from 'fluent-ffmpeg'
 import {
   isSquare,
   isLandscape,
