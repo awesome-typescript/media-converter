@@ -11,10 +11,7 @@
  "main": "dist/index.js",
  "types": "dist/index.d.ts",
  "scripts": {
-  "build": "npm run build:prod",
-  "build:dev": "npm run clean && cross-env NODE_ENV=development webpack",
-  "build:prod": "npm run clean && cross-env NODE_ENV=production webpack",
-  "build:tsc:prod": "npm run clean && tsc --moduleResolution node --project tsconfig.json",
+  "build": "npm run clean && tsc --project tsconfig.json",
   "test": "npm run test:eslint && npm run test:prettier && npm run test:typecheck && npm run test:jest",
   "test:jest": "jest ./src --coverage --testPathIgnorePatterns --runInBand",
   "test:eslint": "eslint --cache --cache-location ./node_modules/.cache/eslint ./src",
