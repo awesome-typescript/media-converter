@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
 	printWidth: 80,
@@ -29,7 +29,7 @@ module.exports = {
 	// Enforcing bracket on the next line makes differentiate
 	// where ends the tag and its properties and where starts the content of the tag.
 	// https://prettier.io/docs/en/options.html#jsx-brackets
-	jsxBracketSameLine: false,
+	bracketSameLine: false,
 
 	// That actually is enforced by AirBnB Style anyway.
 	// Explicitness is the most important thing:
@@ -48,5 +48,5 @@ module.exports = {
 	// Indent lines with tabs instead of spaces.
 	useTabs: false,
 
-	endOfLine: 'lf'
+	endOfLine: 'lf',
 }
