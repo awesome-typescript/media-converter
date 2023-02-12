@@ -117,9 +117,13 @@ dist
 # media
 tmp/media/downloads/*.mp4
 tmp/media/downloads/*.mp3
+tmp/media/downloads/*.ts
 !tmp/media/downloads/.gitkeep
 !tmp/media/downloads/video-landscape.mp3
 !tmp/media/downloads/video-landscape.mp4
+!tmp/media/downloads/video-landscape.ts
+!tmp/media/downloads/video-landscape2.mp4
+!tmp/media/downloads/video-landscape2.ts
 !tmp/media/downloads/video-portrait.mp3
 !tmp/media/downloads/video-portrait.mp4
 !tmp/media/downloads/video-square.mp3
